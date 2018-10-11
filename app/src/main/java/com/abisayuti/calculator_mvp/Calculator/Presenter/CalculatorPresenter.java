@@ -15,16 +15,14 @@ public class CalculatorPresenter implements BasePresenter<CalculatorView>  {
 
     public void ADDMethod(String bilangan1, String bilangan2){
 
-        if (bilangan1.length() == 0 && bilangan2.length() ==0 ) {
+        if (bilangan1.equals("")&& bilangan2.equals("") ) {
             Toast.makeText((Context) ActivityCalculator, "", Toast.LENGTH_SHORT).show();
         }
-        else if (bilangan1.length() == 0){
+        else if (bilangan1.equals("")){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 1 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
         }
-        else if (bilangan2.length() == 0 ){
+        else if (bilangan2.equals("")){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 2 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
         }
 
         else {
@@ -50,16 +48,14 @@ public class CalculatorPresenter implements BasePresenter<CalculatorView>  {
 
     public void MINMethod(String bilangan1, String bilangan2){
 
-        if (bilangan1.length() == 0 && bilangan2.length() ==0 ) {
+        if (bilangan1.equals("") && bilangan2.equals("") ) {
             Toast.makeText((Context) ActivityCalculator, "", Toast.LENGTH_SHORT).show();
         }
-        else if (bilangan1.length() == 0){
+        else if (bilangan1.equals("")){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 1 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
         }
-        else if (bilangan2.length() == 0 ){
+        else if (bilangan2.equals("") ){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 2 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
         }
 
         else {
@@ -85,16 +81,14 @@ public class CalculatorPresenter implements BasePresenter<CalculatorView>  {
     public void XMethod(String bilangan1, String bilangan2){
 
 
-        if (bilangan1.length() == 0 && bilangan2.length() ==0 ) {
+        if (bilangan1.equals("") && bilangan2.equals("") ) {
             Toast.makeText((Context) ActivityCalculator, "", Toast.LENGTH_SHORT).show();
         }
-        else if (bilangan1.length() == 0){
+        else if (bilangan1.equals("")){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 1 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
         }
-        else if (bilangan2.length() == 0 ){
+        else if (bilangan2.equals("") ){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 2 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
         }
 
         else {
@@ -119,21 +113,19 @@ public class CalculatorPresenter implements BasePresenter<CalculatorView>  {
 
     public void DIVMethod(String bilangan1, String bilangan2){
 
-        if (bilangan1.length() == 0 && bilangan2.length() ==0 ) {
+        if (bilangan1.equals("") && bilangan2.equals("") ) {
             Toast.makeText((Context) ActivityCalculator, "", Toast.LENGTH_SHORT).show();
         }
-        else if (bilangan1.length() == 0){
+        else if (bilangan1.equals("")){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 1 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
+
         }
-        else if (bilangan2.length() == 0 ){
+        else if (bilangan2.equals("") ){
             Toast.makeText((Context) ActivityCalculator, "Bilangan 2 Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-            return;
         }
 
         else {
-
-
+            
 
             double BLG1 = Double.parseDouble(bilangan1);
             double BLG2 = Double.parseDouble(bilangan2);
